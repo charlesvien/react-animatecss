@@ -6,7 +6,7 @@
 
 > A React component implementing the latest version of Animate.css
 
-## Install
+## Installation
 
 ```bash
 npm install @charlesvien/react-animatecss
