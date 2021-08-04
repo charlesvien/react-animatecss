@@ -26,7 +26,9 @@ The official Animate.css documentation can be found at https://animate.style. Yo
 
 ## Usage
 
-This is a basic example showing how to add a fadeIn and fadeOut animation to a component. In order for the fadeOut animation to occur, instead of conditionally rendering the component you must pass ``false`` to the ``visible`` prop when the component should no longer be visible.
+This is a basic example showing how to add a fadeIn and fadeOut animation to a component.
+
+**NOTE:** In order for the fadeOut animation to occur, instead of conditionally rendering the component you must pass ``false`` to the ``visible`` prop when the component should no longer be visible.
 
 ```js
 import Animate from '@charlesvien/react-animatecss';
