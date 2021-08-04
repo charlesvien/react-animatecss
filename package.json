@@ -1,7 +1,7 @@
 {
   "name": "@charlesvien/react-animatecss",
-  "version": "0.0.0-dev",
-  "description": "A template for publishing a React + SASS package to npm",
+  "version": "1.0.0",
+  "description": "A React component implementing the latest version of Animate.cssm",
   "author": "Charles Vien <me@charlesvien.com>",
   "license": "MIT",
   "repository": "https://github.com/charlesvien/react-animatecss",
