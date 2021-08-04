@@ -1,6 +1,6 @@
 {
   "name": "@charlesvien/react-animatecss",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "A React component implementing the latest version of Animate.cssm",
   "author": "Charles Vien <me@charlesvien.com>",
   "license": "MIT",
