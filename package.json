@@ -1,10 +1,22 @@
 {
   "name": "@charlesvien/react-animatecss",
   "version": "0.0.10",
-  "description": "A React component implementing the latest version of Animate.cssm",
+  "description": "A React component implementing the latest version of Animate.css",
   "author": "Charles Vien <me@charlesvien.com>",
+  "homepage": "https://github.com/charlesvien/react-animatecss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesvien/react-animatecss.git"
+  },
   "license": "MIT",
-  "repository": "https://github.com/charlesvien/react-animatecss",
+  "keywords": [
+    "react",
+    "reactjs",
+    "animatecss",
+    "animate-css",
+    "javascript",
+    "typescript"
+  ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "files": [
@@ -48,10 +60,5 @@
     "rollup-plugin-typescript2": "^0.30.0",
     "tslib": "^2.3.0",
     "typescript": "^4.3.5"
-  },
-  "keywords": [
-    "react",
-    "JSX",
-    "npm"
-  ]
+  }
 }
