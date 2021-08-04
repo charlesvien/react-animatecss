@@ -66,7 +66,7 @@ import Animate from '@charlesvien/react-animatecss';
 
 ## Development
 
-Contributations are welcome to react-animatecss!
+Contributions are welcome to react-animatecss!
 
 To set up the project:
 
