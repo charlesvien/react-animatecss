@@ -13,10 +13,10 @@
 ## Installation
 
 ```bash
-# With npm
+# with npm
 npm install @charlesvien/react-animatecss
 
-# With Yarn
+# with yarn
 yarn add @charlesvien/react-animatecss
 ```
 
