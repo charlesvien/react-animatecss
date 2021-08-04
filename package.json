@@ -29,7 +29,8 @@
   "scripts": {
     "build": "rollup -c",
     "watch": "rollup -c -w",
-    "dev": "start-storybook -p 6006"
+    "dev": "start-storybook -p 6006",
+    "build:storybook": "build-storybook -o docs-build"
   },
   "dependencies": {
     "prop-types": "^15.7.2"

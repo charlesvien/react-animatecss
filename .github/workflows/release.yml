@@ -1,4 +1,4 @@
-name: Deploy
+name: Build and Deploy
 
 on:
   push:
@@ -6,6 +6,27 @@ on:
       - "v*"
 
 jobs:
+  docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Build
+        run: yarn build:storybook
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@3.6.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: main
+          FOLDER: docs-build
+          CLEAN: true
+          TARGET_FOLDER: docs
+
   publish:
     runs-on: ubuntu-latest
     steps:
@@ -21,8 +42,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # - name: Test
-      #   run: yarn test --ci --coverage
+      - name: Build
+        run: yarn build
 
       - name: Publish
         run: yarn publish --access public
