@@ -10,6 +10,10 @@
 - **Minimal package size** - <1 kB gzipped
 - **No messy installation** - A simple way to add motion to your react components
 
+## Demo
+
+[Take a look at the demo](https://react-animatecss.com/)
+
 ## Installation
 
 ```bash
