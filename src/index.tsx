@@ -7,15 +7,6 @@ import { prefix } from './prefixer';
 
 import './animate.min.css';
 
-/**
- * Animate component
- * 
- * @param   {React.CSSProperties} style additional styles to apply to the wrapper element
- * @param   {<type>} param2 <description>
- * @param   {<type>} param3 <description>
- * @return  {JSX.Element}               Animate jsx element
- */
-
 const Animate: FunctionComponent<AnimateProps> = ({
   animationIn,
   animationOut,

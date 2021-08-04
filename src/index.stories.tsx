@@ -11,7 +11,7 @@ export default {
 
 const Template: Story<ComponentProps<typeof Animate>> = (args) => (
   <Animate { ...args }>
-    FUCK SAKE
+    Magnolia
   </Animate>
 );
 
