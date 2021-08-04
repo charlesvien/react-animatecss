@@ -1,0 +1,63 @@
+{
+  "name": "@charlesvien/react-animatecss",
+  "version": "1.0.0",
+  "description": "A React component implementing the latest version of Animate.css",
+  "author": "Charles Vien <me@charlesvien.com>",
+  "homepage": "https://github.com/charlesvien/react-animatecss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlesvien/react-animatecss.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "animatecss",
+    "animate-css",
+    "javascript",
+    "typescript"
+  ],
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "dev": "start-storybook -p 6006",
+    "build:storybook": "build-storybook -o docs-build"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2"
+  },
+  "peerDependencies": {
+    "react": "^15.3.0 || ^16.0.0 || ^17.0.0",
+    "react-dom": "^15.3.0 || ^16.0.0 || ^17.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/react": "^6.3.6",
+    "@types/node": "^16.4.6",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "babel-loader": "^8.2.2",
+    "postcss": "^8.3.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "rollup": "^2.45.2",
+    "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "tslib": "^2.3.0",
+    "typescript": "^4.3.5"
+  }
+}

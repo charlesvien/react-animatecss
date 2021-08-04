@@ -1,0 +1,17 @@
+__tests__
+src
+demo
+dist
+.babelrc
+.eslintrc
+.gitignore
+.prettierignore
+.prettierrc
+.vscode
+stats.json
+tsconfig.json
+webpack.config.js
+jest.config.js
+jest.setup.js
+coverage
+rollup.config.js
