@@ -1,18 +1,22 @@
 # react-animatecss
 
 [![npm package][npm-img]][npm-url]
-[![Build Status][build-img]][build-url]
 [![Downloads][downloads-img]][downloads-url]
+[![Build Status][build-img]][build-url]
 
 > A React component implementing the latest version of Animate.css
+
+- **Zero dependencies** - All self contained code
+- **Minimal package size** - <1 kB gzipped
+- **No messy installation** - A simple way to add motion to your react components
 
 ## Installation
 
 ```bash
+# With npm
 npm install @charlesvien/react-animatecss
-```
-or alternatively
-```bash
+
+# With Yarn
 yarn add @charlesvien/react-animatecss
 ```
 
@@ -43,6 +47,18 @@ import Animate from '@charlesvien/react-animatecss';
   Magnolia
 </Animate>
 ```
+
+## Development
+
+Contributations are welcome to react-animatecss!
+
+To set up the project:
+
+1.  Fork and clone the repository
+2.  `$ yarn`
+3.  `$ yarn dev`
+
+Storybook will then be served on http://localhost:6006/ in watch mode, meaning you don't have refresh the page to see your changes.
 
 [npm-img]:https://img.shields.io/npm/v/@charlesvien/react-animatecss
 [npm-url]:https://www.npmjs.com/package/@charlesvien/react-animatecss
