@@ -1,8 +1,11 @@
 name: Deploy
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - "!*"
+    tags:
+      - "v*"
 
 jobs:
   publish:
@@ -22,9 +25,6 @@ jobs:
 
       # - name: Test
       #   run: yarn test --ci --coverage
-
-      - name: Version
-        run: yarn version --new-version "${GITHUB_REF:11}" --no-git-tag-version
 
       - name: Publish
         run: yarn publish --access public
