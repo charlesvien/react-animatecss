@@ -52,9 +52,6 @@ const Animate: FunctionComponent<AnimateProps> = ({
     if (loop === true) {
       classes.push('animate__infinite');
     }
-    if (repeat !== null) {
-      classes.push(`animate__repeat-${repeat}`);
-    }
     if (mounted || onMount) {
       if (visible) {
         classes.push(`animate__${animationIn}`);
@@ -73,12 +70,21 @@ const Animate: FunctionComponent<AnimateProps> = ({
     <div
       className={buildClasses()}
       style={prefix({
+        animationRepeat: `${repeat ? repeat : 1}`,
         animationDelay: `${visible ? inDelay : outDelay}ms`,
         animationDuration: `${visible ? inDuration : outDuration}ms`,
         pointerEvents: visible ? 'all' : 'none',
         ...style,
       })}
     >
+      {
+        JSON.stringify(prefix({
+          animationRepeat: `${repeat ? repeat : 1}`,
+          animationDelay: `${visible ? inDelay : outDelay}ms`,
+          animationDuration: `${visible ? inDuration : outDuration}ms`,
+          pointerEvents: visible ? 'all' : 'none',
+        }))
+      }
       {children}
     </div>
   );

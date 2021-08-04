@@ -16,6 +16,12 @@ or alternatively
 yarn add @charlesvien/react-animatecss
 ```
 
+## Documentation
+
+The official Animate.css documentation can be found at https://animate.style. You can view a list of all animations that your able to use with this component on their website.
+
+The documentation for this project, react-animatecss can be found at https://react-animatecss.com.
+
 ## Usage
 
 ```js
