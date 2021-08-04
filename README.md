@@ -24,9 +24,9 @@ yarn add @charlesvien/react-animatecss
 
 The official Animate.css documentation can be found at https://animate.style. You can view a list of all animations that your able to use with this component on their website.
 
-The documentation for this project, react-animatecss can be found at https://react-animatecss.com.
-
 ## Usage
+
+This is a basic example showing how to add a fadeIn and fadeOut animation to a component. In order for the fadeOut animation to occur, instead of conditionally rendering the component you must pass ``false`` to the ``visible`` prop when the component should no longer be visible.
 
 ```js
 import Animate from '@charlesvien/react-animatecss';
@@ -34,19 +34,17 @@ import Animate from '@charlesvien/react-animatecss';
 <Animate
   animationIn="fadeIn"
   animationOut="fadeOut"
-  inDelay={0}
-  outDelay={0}
   inDuration={1000}
   outDuration={1000}
-  repeat={1000}
-  onMount
   visible
-  loop
-  style
 >
   Magnolia
 </Animate>
 ```
+
+## API
+
+todo
 
 ## Development
 
