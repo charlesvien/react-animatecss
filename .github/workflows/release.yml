@@ -1,4 +1,4 @@
-name: Build and deploy to NPM
+name: Deploy
 
 on:
   push:
