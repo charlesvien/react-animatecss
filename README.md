@@ -50,7 +50,19 @@ import Animate from '@charlesvien/react-animatecss';
 
 ## API
 
-todo
+| Prop         | Type                | Default     | Description                                                          |   |
+|--------------|---------------------|-------------|----------------------------------------------------------------------|---|
+| animationIn  | string              | fadeIn      | The animation name to be played when the component turns visible     |   |
+| animationOut | string              | fadeOut     | The animation name to be played when the component turns invisible   |   |
+| inDelay      | number              | 0           | The delay before the visible animation is played                     |   |
+| outDelay     | number              | 0           | The delay before the invisible animation is played                   |   |
+| inDuration   | number              | 1000        | The duration the visible animation is played                         |   |
+| outDuration  | number              | 1000        | The duration the invisible animation is played                       |   |
+| repeat       | number              | 0           | How many times the animation repeats (min: 1, max: 3)                |   |
+| onMount      | boolean             | true        | If the animation should play when the component is first mounted     |   |
+| visible      | boolean             | true        | If the Animate component should be visible                           |   |
+| loop         | boolean             | false       | If the animation should infinitely loop                              |   |
+| style        | React.CSSProperties | _undefined_ | Additional optional css properties to apply to the Animate container |   |
 
 ## Development
 
