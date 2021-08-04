@@ -4,7 +4,7 @@
 [![Downloads][downloads-img]][downloads-url]
 [![Build Status][build-img]][build-url]
 
-> A React component implementing the latest version of [Animate.css](https://animate.style)
+> A React component implementing the latest version of [Animate.css](https://animate.style)!
 
 - **Zero dependencies** - All self contained code
 - **Minimal package size** - <1 kB gzipped
