@@ -3,8 +3,6 @@ import React, {
 } from 'react';
 import * as PropTypes from 'prop-types';
 
-import { prefix } from './prefixer';
-
 import './animate.min.css';
 
 const Animate: FunctionComponent<AnimateProps> = ({
@@ -28,6 +26,9 @@ const Animate: FunctionComponent<AnimateProps> = ({
     if (loop === true) {
       classes.push('animate__infinite');
     }
+    if (repeat !== null && repeat > 0) {
+      classes.push(`animate__repeat-${repeat}`);
+    }
     if (mounted || onMount) {
       if (visible) {
         classes.push(`animate__${animationIn}`);
@@ -45,22 +46,13 @@ const Animate: FunctionComponent<AnimateProps> = ({
   return (
     <div
       className={buildClasses()}
-      style={prefix({
-        animationRepeat: `${repeat ? repeat : 1}`,
+      style={{
         animationDelay: `${visible ? inDelay : outDelay}ms`,
         animationDuration: `${visible ? inDuration : outDuration}ms`,
         pointerEvents: visible ? 'all' : 'none',
         ...style,
-      })}
+      }}
     >
-      {
-        JSON.stringify(prefix({
-          animationRepeat: `${repeat ? repeat : 1}`,
-          animationDelay: `${visible ? inDelay : outDelay}ms`,
-          animationDuration: `${visible ? inDuration : outDuration}ms`,
-          pointerEvents: visible ? 'all' : 'none',
-        }))
-      }
       {children}
     </div>
   );
@@ -75,7 +67,7 @@ Animate.defaultProps = {
   outDelay: 0,
   inDuration: 1000,
   outDuration: 1000,
-  repeat: 1000,
+  repeat: 0,
   onMount: true,
   visible: true,
   loop: false,
@@ -90,7 +82,7 @@ Animate.propTypes = {
   outDelay: PropTypes.number,
   inDuration: PropTypes.number,
   outDuration: PropTypes.number,
-  repeat: PropTypes.number,
+  repeat: PropTypes.oneOf([1, 2, 3]),
   onMount: PropTypes.bool,
   visible: PropTypes.bool,
   loop: PropTypes.bool,
