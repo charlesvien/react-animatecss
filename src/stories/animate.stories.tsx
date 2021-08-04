@@ -2,7 +2,7 @@ import React, { ComponentProps } from 'react';
 
 import { Story, Meta } from '@storybook/react';
 
-import Animate from './index';
+import Animate from '../index';
 
 export default {
   title: 'Animate',
