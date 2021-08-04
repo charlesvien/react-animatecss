@@ -32,15 +32,7 @@ import Animate from '@charlesvien/react-animatecss';
 
 [build-img]:https://github.com/charlesvien/react-animatecss/actions/workflows/release.yml/badge.svg
 [build-url]:https://github.com/charlesvien/react-animatecss/actions/workflows/release.yml
-[downloads-img]:https://img.shields.io/npm/dt/react-animatecss
-[downloads-url]:https://www.npmtrends.com/react-animatecss
-[npm-img]:https://img.shields.io/npm/v/react-animatecss
-[npm-url]:https://www.npmjs.com/package/react-animatecss
-[issues-img]:https://img.shields.io/github/issues/charlesvien/react-animatecss
-[issues-url]:https://github.com/charlesvien/react-animatecss/issues
-[codecov-img]:https://codecov.io/gh/charlesvien/react-animatecss/branch/main/graph/badge.svg
-[codecov-url]:https://codecov.io/gh/charlesvien/react-animatecss
-[semantic-release-img]:https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg
-[semantic-release-url]:https://github.com/semantic-release/semantic-release
-[commitizen-img]:https://img.shields.io/badge/commitizen-friendly-brightgreen.svg
-[commitizen-url]:http://commitizen.github.io/cz-cli/
+[downloads-img]:https://img.shields.io/npm/dt/@charlesvien/react-animatecss
+[downloads-url]:https://www.npmtrends.com/@charlesvien/react-animatecss
+[npm-img]:https://img.shields.io/npm/v/@charlesvien/react-animatecss
+[npm-url]:https://www.npmjs.com/package/@charlesvien/react-animatecss
