@@ -21,7 +21,19 @@ yarn add @charlesvien/react-animatecss
 ```js
 import Animate from '@charlesvien/react-animatecss';
 
-<Animate>
+<Animate
+  animationIn="fadeIn"
+  animationOut="fadeOut"
+  inDelay={0}
+  outDelay={0}
+  inDuration={1000}
+  outDuration={1000}
+  repeat={1000}
+  onMount
+  visible
+  loop
+  style
+>
   Magnolia
 </Animate>
 ```
