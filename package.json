@@ -11,11 +11,11 @@
   "license": "MIT",
   "keywords": [
     "react",
-    "reactjs",
+    "animated",
     "animatecss",
     "animate-css",
-    "javascript",
-    "typescript"
+    "animation",
+    "animated.css"
   ],
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
