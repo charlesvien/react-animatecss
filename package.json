@@ -6,6 +6,7 @@
   "license": "MIT",
   "repository": "https://github.com/charlesvien/react-animatecss",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist/**/*"
   ],
