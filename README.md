@@ -7,7 +7,7 @@
 > A React component implementing the latest version of [Animate.css](https://animate.style)!
 
 - **Zero dependencies** - All self contained code
-- **Minimal package size** - <1 kB gzipped
+- **Minimal package size** - <7 kB gzipped
 - **No messy installation** - A simple way to add motion to your react components
 
 ## Demo
