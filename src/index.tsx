@@ -4,6 +4,7 @@ import React, {
 import * as PropTypes from 'prop-types';
 
 import './animate.min.css';
+import { usePrevious } from './usePrevious';
 
 interface AnimateProps {
   animationIn?: string,
@@ -35,6 +36,7 @@ const Animate: FunctionComponent<AnimateProps> = ({
   children,
 }): JSX.Element => {
   const [mounted, setMounted] = useState(false);
+  const prevMounted = usePrevious(mounted);
 
   const buildClasses = () => {
     const classes = ['animate__animated'];
@@ -44,7 +46,7 @@ const Animate: FunctionComponent<AnimateProps> = ({
     if (repeat !== null && repeat > 0) {
       classes.push(`animate__repeat-${repeat}`);
     }
-    if (mounted || onMount) {
+    if (onMount || prevMounted) {
       if (visible) {
         classes.push(`animate__${animationIn}`);
       } else {
@@ -56,7 +58,7 @@ const Animate: FunctionComponent<AnimateProps> = ({
 
   useEffect(() => {
     setMounted(true);
-  }, []);
+  });
 
   return (
     <div
