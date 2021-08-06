@@ -3,8 +3,10 @@ import React, {
 } from 'react';
 import * as PropTypes from 'prop-types';
 
-import './animate.min.css';
 import { usePrevious } from './usePrevious';
+
+import './style/animate.min.css';
+import './style/style.css';
 
 interface AnimateProps {
   animationIn?: string,
@@ -52,6 +54,8 @@ const Animate: FunctionComponent<AnimateProps> = ({
       } else {
         classes.push(`animate__${animationOut}`);
       }
+    } else if (!visible) {
+      classes.push('animate__hidden');
     }
     return classes.join(' ');
   }
