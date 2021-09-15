@@ -19,6 +19,7 @@ interface AnimateProps {
   onMount?: boolean,
   visible?: boolean,
   loop?: boolean,
+  className?: string,
   style?: React.CSSProperties,
   children?: React.ReactNode,
 }
@@ -34,6 +35,7 @@ const Animate: FunctionComponent<AnimateProps> = ({
   visible,
   repeat,
   loop,
+  className,
   style,
   children,
 }): JSX.Element => {
@@ -57,7 +59,7 @@ const Animate: FunctionComponent<AnimateProps> = ({
     } else if (!visible) {
       classes.push('animate__hidden');
     }
-    return classes.join(' ');
+    return `${className} ${classes.join(' ')}`.trim();
   }
 
   useEffect(() => {
@@ -103,7 +105,7 @@ Animate.propTypes = {
   outDelay: PropTypes.number,
   inDuration: PropTypes.number,
   outDuration: PropTypes.number,
-  repeat: PropTypes.oneOf([1, 2, 3]),
+  repeat: PropTypes.oneOf([0, 1, 2, 3]),
   onMount: PropTypes.bool,
   visible: PropTypes.bool,
   loop: PropTypes.bool,
