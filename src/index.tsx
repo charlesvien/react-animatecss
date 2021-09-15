@@ -94,6 +94,7 @@ Animate.defaultProps = {
   onMount: true,
   visible: true,
   loop: false,
+  className: null,
   style: null,
   children: null,
 };
@@ -109,6 +110,7 @@ Animate.propTypes = {
   onMount: PropTypes.bool,
   visible: PropTypes.bool,
   loop: PropTypes.bool,
+  className: PropTypes.string,
   style: PropTypes.objectOf(PropTypes.object),
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
