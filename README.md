@@ -62,7 +62,8 @@ import Animate from '@charlesvien/react-animatecss';
 | onMount      | boolean  | true        | If the animation should play when the component is first mounted     |
 | visible      | boolean  | true        | If the Animate component should be visible                           |
 | loop         | boolean  | false       | If the animation should infinitely loop                              |
-| style        | object   | _undefined_ | Additional optional css properties to apply to the Animate container |
+| className    | string   | _undefined_ | Additional optional css class names to apply to the container        |
+| style        | object   | _undefined_ | Additional optional css properties to apply to the container         |
 
 ## Development
 
